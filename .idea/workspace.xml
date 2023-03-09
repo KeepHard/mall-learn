@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="mall-tiny-01 mybatis generator 配置">
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/CommentGenerator.java" afterDir="false" />
+    <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="mall-tiny-01 mybatis generator 生成model、mapper">
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/controller/PmsBrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/PmsBrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -112,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678329594072</updated>
       <workItem from="1678329595678" duration="6706000" />
-      <workItem from="1678348370073" duration="3411000" />
+      <workItem from="1678348370073" duration="4979000" />
     </task>
     <task id="LOCAL-00001" summary="mall学习项目初始化">
       <created>1678329832058</created>
@@ -128,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678335985634</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mall-tiny-01 mybatis generator 生成model、mapper">
+      <created>1678352014665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678352014665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mall学习项目初始化" />
     <MESSAGE value="mall-tiny-01 mybatis generator 配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="mall-tiny-01 mybatis generator 配置" />
+    <MESSAGE value="mall-tiny-01 mybatis generator 生成model、mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="mall-tiny-01 mybatis generator 生成model、mapper" />
   </component>
 </project>
