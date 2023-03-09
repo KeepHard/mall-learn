@@ -1,0 +1,21 @@
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="generator.properties"></properties>
+    <context id="mySqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
+        <jdbcConnection driverClass="${jdbc.driver}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.user}"
+                        password="${jdbc.password}"
+        />
+
+        <javaModelGenerator targetPackage="com.aihs.mall.tiny.mgb.model" targetProject="mall-tiny-01/src/main/java"/>
+
+        <sqlMapGenerator targetPackage="com.aihs.mall.tiny.mgb.mapper" targetProject="mall-tiny-01/src/main/resources"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aihs.mall.tiny.mgb.mapper" targetProject="mall-tiny-01/src/main/java"/>
+
+        <table tableName="pms_brand" />
+    </context>
+</generatorConfiguration>

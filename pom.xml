@@ -7,6 +7,10 @@
     <groupId>com.aihs</groupId>
     <artifactId>mall-learn</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
