@@ -14,6 +14,9 @@
         <!--为模型生成toString方法-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
 
+        <!--为解决mgb重新生成时合并产生的错误-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"></plugin>
+
         <commentGenerator type="com.aihs.mall.tiny.mgb.CommentGenerator">
             <property name="suppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>
@@ -36,6 +39,8 @@
         <!--指定生成mapper接口的路径-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.aihs.mall.tiny.mgb.mapper" targetProject="mall-tiny-01/src/main/java"/>
 
-        <table tableName="pms_brand" />
+        <table tableName="pms_brand" >
+            <generatedKey column="id" sqlStatement="MySQL" identity="true"></generatedKey>
+        </table>
     </context>
 </generatorConfiguration>

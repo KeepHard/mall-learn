@@ -53,4 +53,16 @@ public class CommonResult<T> {
     public static <T> CommonResult<T> forbidden(T data){
         return new CommonResult<>(ResultCode.FORBIDDEN.getCode(), ResultCode.FORBIDDEN.getMessage(), data);
     }
+
+    public long getCode() {
+        return code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public T getData() {
+        return data;
+    }
 }

@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="controller、service 编写">
+    <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="公共返回结果编写">
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/config/MybatisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/MallTinyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/MallTinyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/controller/PmsBrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/controller/PmsBrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/mapper/PmsBrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/mapper/PmsBrandMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/model/PmsBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/model/PmsBrand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/PmsBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/PmsBrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/impl/PmsBrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/com/aihs/mall/tiny/mgb/mapper/PmsBrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/com/aihs/mall/tiny/mgb/mapper/PmsBrandMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,7 +80,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Generator">
+  <component name="RunManager" selected="Spring Boot.MallTinyApplication">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aihs.mall.tiny.mgb.Generator" />
       <module name="mall-tiny-01" />
@@ -97,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Generator" />
         <item itemvalue="Spring Boot.MallTinyApplication" />
+        <item itemvalue="Application.Generator" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +124,8 @@
       <updated>1678329594072</updated>
       <workItem from="1678329595678" duration="6706000" />
       <workItem from="1678348370073" duration="5623000" />
-      <workItem from="1678409759536" duration="633000" />
+      <workItem from="1678409759536" duration="6088000" />
+      <workItem from="1678431844149" duration="4642000" />
     </task>
     <task id="LOCAL-00001" summary="mall学习项目初始化">
       <created>1678329832058</created>
@@ -142,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678353450017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="公共返回结果编写">
+      <created>1678410447807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678410447807</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +173,7 @@
     <MESSAGE value="mall-tiny-01 mybatis generator 配置" />
     <MESSAGE value="mall-tiny-01 mybatis generator 生成model、mapper" />
     <MESSAGE value="controller、service 编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller、service 编写" />
+    <MESSAGE value="公共返回结果编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="公共返回结果编写" />
   </component>
 </project>
