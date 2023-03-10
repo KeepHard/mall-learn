@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="mall-tiny-01 mybatis generator 生成model、mapper">
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/IErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/controller/PmsBrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/PmsBrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
+    <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="controller、service 编写">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/common/api/CommonResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +48,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/idea_workspace",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "2b245c45711881f17fc245b5898e5071",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/idea_workspace&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2b245c45711881f17fc245b5898e5071&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Generator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aihs.mall.tiny.mgb.Generator" />
@@ -116,7 +111,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678329594072</updated>
       <workItem from="1678329595678" duration="6706000" />
-      <workItem from="1678348370073" duration="4979000" />
+      <workItem from="1678348370073" duration="5623000" />
+      <workItem from="1678409759536" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="mall学习项目初始化">
       <created>1678329832058</created>
@@ -139,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678352014665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="controller、service 编写">
+      <created>1678353450017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678353450017</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +152,7 @@
     <MESSAGE value="mall学习项目初始化" />
     <MESSAGE value="mall-tiny-01 mybatis generator 配置" />
     <MESSAGE value="mall-tiny-01 mybatis generator 生成model、mapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="mall-tiny-01 mybatis generator 生成model、mapper" />
+    <MESSAGE value="controller、service 编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller、service 编写" />
   </component>
 </project>
