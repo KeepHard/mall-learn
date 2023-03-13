@@ -3,6 +3,7 @@ package com.aihs.mall.tiny.mgb;
 import io.swagger.annotations.ApiModelProperty;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
+import org.mybatis.generator.api.dom.java.CompilationUnit;
 import org.mybatis.generator.api.dom.java.Field;
 import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;
 import org.mybatis.generator.internal.DefaultCommentGenerator;
@@ -14,19 +15,21 @@ import java.util.Set;
 public class CommentGenerator extends DefaultCommentGenerator {
     private boolean addRemarkComments = false;
 
+    private static final String EXAMPLE_SUFFIX="Example";
+    private static final String API_MODEL_PROPERTY_FULL_CLASS_NAME="io.swagger.annotations.ApiModelProperty";
+
     @Override
     public void addConfigurationProperties(Properties properties){
         super.addConfigurationProperties(properties);
         this.addRemarkComments = StringUtility.isTrue(properties.getProperty("addRemarkComments"));
     }
 
-    @Override
-    public void addFieldAnnotation(Field field, IntrospectedTable introspectedTable, Set<FullyQualifiedJavaType> imports) {
-        super.addFieldAnnotation(field, introspectedTable, imports);
-        String remarks = introspectedTable.getRemarks();
-        imports.add(new FullyQualifiedJavaType("io.swagger.annotations.ApiModelProperty"));
-        if(addRemarkComments&&StringUtility.stringHasValue(remarks)){
 
+    @Override
+    public void addJavaFileComment(CompilationUnit compilationUnit) {
+        super.addJavaFileComment(compilationUnit);
+        if(!compilationUnit.isJavaInterface()&&!compilationUnit.getType().getFullyQualifiedName().contains(EXAMPLE_SUFFIX)){
+            compilationUnit.addImportedType(new FullyQualifiedJavaType(API_MODEL_PROPERTY_FULL_CLASS_NAME));
         }
     }
 
@@ -35,6 +38,7 @@ public class CommentGenerator extends DefaultCommentGenerator {
         String remarks = introspectedColumn.getRemarks();
         if(addRemarkComments&&StringUtility.stringHasValue(remarks)){
             addFieldJavaDoc(field,remarks);
+            field.addJavaDocLine("@ApiModelProperty(value=\""+remarks+"\")");
         }
     }
 
