@@ -37,6 +37,7 @@ public class CommentGenerator extends DefaultCommentGenerator {
         String remarks = introspectedColumn.getRemarks();
         if(this.addRemarkComments&&StringUtility.stringHasValue(remarks)){
             this.addFieldDoc(field,remarks);
+            field.addJavaDocLine("@ApiModelProperty(value=\""+remarks+"\")");
         }
     }
 
