@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceadf548-c991-4967-9307-6ba737c5f882" name="Changes" comment="mall-tiny-01 springBoot与MyBatis整合搭建完成">
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01-review/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01-review/src/main/java/com/aihs/mall/mgb/CommentGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01-review/src/main/java/com/aihs/mall/mgb/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01-review/src/main/resources/connection.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-tiny-01-review/src/main/resources/mgbConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/CommentGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/CommentGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/model/PmsBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-tiny-01/src/main/java/com/aihs/mall/tiny/mgb/model/PmsBrand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +74,31 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.MallTinyApplication">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\idea_workspace\mall-learn\mall-tiny-01-review\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.aihs.mall.mgb.Generator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aihs.mall.tiny.mgb.Generator" />
       <module name="mall-tiny-01" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.aihs.mall.tiny.mgb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.aihs.mall.mgb.Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aihs.mall.mgb.Generator" />
+      <module name="mall-tiny-01-review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aihs.mall.mgb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.aihs.mall.mgb.Generator" />
         <item itemvalue="Spring Boot.MallTinyApplication" />
         <item itemvalue="Application.Generator" />
       </list>
@@ -115,7 +139,8 @@
       <workItem from="1678348370073" duration="5623000" />
       <workItem from="1678409759536" duration="6088000" />
       <workItem from="1678431844149" duration="7929000" />
-      <workItem from="1678677685525" duration="2243000" />
+      <workItem from="1678677685525" duration="4829000" />
+      <workItem from="1678754961747" duration="4223000" />
     </task>
     <task id="LOCAL-00001" summary="mall学习项目初始化">
       <created>1678329832058</created>
@@ -166,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678439612733</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mall-tiny-01 springBoot与MyBatis整合搭建完成">
+      <created>1678689121892</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678689121893</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

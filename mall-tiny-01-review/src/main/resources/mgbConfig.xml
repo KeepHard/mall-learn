@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="connection.properties" />
+    <context id="myMGB" targetRuntime="MyBatis3" defaultModelType="flat">
+        <commentGenerator type="com.aihs.mall.mgb.CommentGenerator">
+            <property name="suppressAllComments" value="true"/>
+            <property name="addRemarkComments" value="true"/>
+        </commentGenerator>
+        
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                        connectionURL="${jdbc.connectionUrl}"
+                        userId="${jdbc.userId}"
+                        password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.aihs.mall.mgb.model" targetProject="mall-tiny-01-review\src\main\java">
+
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.aihs.mall.mgb.mapper"  targetProject="mall-tiny-01-review\src\main\resources">
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aihs.mall.mgb.mapper"  targetProject="mall-tiny-01-review\src\main\java">
+        </javaClientGenerator>
+
+        <table tableName="pms_brand">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+
+    </context>
+</generatorConfiguration>
